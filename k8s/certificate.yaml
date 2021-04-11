@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: fibcal-com-tls
+spec: 
+  secretName: fibcal-com
+  issuerRef:
+    name: letsencrpt-prod
+    kind: ClusterIssuer
+  commonName: fibcal.com
+  dnsNames:
+    - fibcal.com
+    - www.fibcal.com
+  
