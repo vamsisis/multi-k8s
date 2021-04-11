@@ -1,0 +1,3 @@
+#if K8S cluster has RBAC enabled, then run Helm command
+helm install stable/nginx-ingress --name my-nginx --set rbac.create=true
+
